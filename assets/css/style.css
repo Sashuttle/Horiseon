@@ -133,6 +133,29 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
+#tooltip {
+    position: relative;
+    display: inline-block
+}
+
+#tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  #tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 
 #search-engine-optimization {
     margin-bottom: 20px;
